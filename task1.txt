@@ -1,0 +1,41 @@
+Make a group
+
+sudo groupadd aws
+.....................................
+
+Make two users deep, sachin
+
+sudo adduser deep
+password:
+sudo adduser sachin
+password:
+
+.....................................
+Assign a Group (aws)
+sudo usermod -a -G aws deep
+sudo usermod -a -G aws sachin
+
+
+.....................................
+Make file in /home & /tmp direcotries
+su deep
+password:
+touch /home/f1
+touch /tmp/f1
+
+su sachin
+password:
+touch /home/f1
+touch /tmp/f1
+
+.....................................
+find the 5 max size of file in computer
+
+sudo du -hs * | sort -rh | head -5
+
+du: disk uses
+-h: print the disk size in human readable format
+-s: disply only parent folder and ocupied space
+sort: to sort the result
+-h: compare human readable numbers
+-r: reverse the result of comparisons
