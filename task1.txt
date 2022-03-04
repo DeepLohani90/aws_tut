@@ -39,3 +39,6 @@ du: disk uses
 sort: to sort the result
 -h: compare human readable numbers
 -r: reverse the result of comparisons
+..........................................
+
+The End
